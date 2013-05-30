@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConexaoDllMaster.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ConexaoDllMaster.Fakes.ShimclsPostgres">
+            <summary>Shim type of ConexaoDllMaster.clsPostgres</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.ShimclsPostgres.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.ShimclsPostgres.#ctor(ConexaoDllMaster.clsPostgres)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.ShimclsPostgres.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.ShimclsPostgres.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.Constructor">
+            <summary>Sets the shim of clsPostgres.clsPostgres()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.ConstructorStringStringString">
+            <summary>Sets the shim of clsPostgres.clsPostgres(String pNomeServidor, String pNomeBanco, String pSenha)</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.ExecCommandString">
+            <summary>Sets the shim of clsPostgres.ExecCommand(String pComando)</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.StaticConstructor">
+            <summary>Sets the shim of clsPostgres.clsPostgres()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.conectar">
+            <summary>Sets the shim of clsPostgres.conectar()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.connStringGet">
+            <summary>Sets the shim of clsPostgres.get_connString()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.desconectar">
+            <summary>Sets the shim of clsPostgres.desconectar()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.getDataReader">
+            <summary>Sets the shim of clsPostgres.getDataReader()</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.getDataTableSemConectarString">
+            <summary>Sets the shim of clsPostgres.getDataTableSemConectar(String pSql)</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.getDataTableString">
+            <summary>Sets the shim of clsPostgres.getDataTable(String pSql)</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.ShimclsPostgres.setDataAdapterString">
+            <summary>Sets the shim of clsPostgres.setDataAdapter(String SQL)</summary>
+        </member>
+        <member name="T:ConexaoDllMaster.Fakes.ShimclsPostgres.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:ConexaoDllMaster.Fakes.StubclsPostgres">
+            <summary>Stub type of ConexaoDllMaster.clsPostgres</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.StubclsPostgres.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.StubclsPostgres.#ctor(System.String,System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:ConexaoDllMaster.Fakes.StubclsPostgres.InitializeStub">
+            <summary>Initializes a new instance of type StubclsPostgres</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.StubclsPostgres.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.StubclsPostgres.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:ConexaoDllMaster.Fakes.StubclsPostgres.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

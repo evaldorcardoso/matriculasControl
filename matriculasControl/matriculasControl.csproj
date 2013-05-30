@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17A637DD-72B6-4EEC-BC29-97ED32F8DFE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>matriculasControl</RootNamespace>
+    <AssemblyName>matriculasControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Matricula-purchase_orderfundo-256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConexaoDllMaster, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConexaoDllMaster\ConexaoDllMaster\bin\Debug\ConexaoDllMaster.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsAlunos.cs" />
+    <Compile Include="ClsDisciplinas.cs" />
+    <Compile Include="clsMatriculas.cs" />
+    <Compile Include="clsMatriculas_Disciplinas.cs" />
+    <Compile Include="clsSemestres.cs" />
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlunosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlunosCadastro.Designer.cs">
+      <DependentUpon>frmAlunosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDisciplinasCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisciplinasCadastro.Designer.cs">
+      <DependentUpon>frmDisciplinasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorios.Designer.cs">
+      <DependentUpon>frmRelatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSemestresCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSemestresCadastro.Designer.cs">
+      <DependentUpon>frmSemestresCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlunosCadastro.resx">
+      <DependentUpon>frmAlunosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDisciplinasCadastro.resx">
+      <DependentUpon>frmDisciplinasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorios.resx">
+      <DependentUpon>frmRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSemestresCadastro.resx">
+      <DependentUpon>frmSemestresCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptListaAlunos.rdlc" />
+    <EmbeddedResource Include="rptListaDisciplinas.rdlc" />
+    <EmbeddedResource Include="rptListaMatriculados.rdlc" />
+    <None Include="Properties\DataSources\ClsAlunos.datasource" />
+    <None Include="Properties\DataSources\ClsDisciplinas.datasource" />
+    <None Include="Properties\DataSources\clsMatriculas.datasource" />
+    <None Include="Properties\DataSources\clsMatriculas_Disciplinas.datasource" />
+    <None Include="Properties\DataSources\clsSemestres.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_user-512_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_user-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-512_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-document-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-document-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tear_of_calendar-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-document-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-tear_of_calendar-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit-tear_of_calendar-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete-tear_of_calendar-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase_order-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-purchase_order-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matricula-purchase_order-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matricula-delete-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matricula-edit-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matricula-add-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Matricula-purchase_orderfundo-256.ico" />
+    <None Include="Resources\TurnOff.png" />
+    <None Include="Resources\print-256.png" />
+    <Content Include="User-purchase_order-256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
